@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result of the Test</title>
+    <!-- linked External css -->
+    <link rel="stylesheet" href="css/local.css">
+    <!-- linked external css-separate mobile responsive code -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Add zoom In animation on page load - link cloud based animate.style.css cloudflare to reduce coding efficiency and faster performance -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="background">
+        <!-- Heading -->
+        <div class="headline">
+            RESULT of the test
+        </div>
+        <!-- icon container -->
+        <div class="tm-container">
+            <nav class="tm-main-nav">
+                <ul id="inline-popups">
+                    <!-- added only class name for zoomIn animation from cloudflare -->
+                    <li class="tm-nav-item tm-nav-link animate__animated animate__zoomIn">
+                        <img src="./Images/Group_1.png">
+                        <p>Never</p>            
+                    </li>
+                    <li class="tm-nav-item tm-nav-link animate__animated animate__zoomIn">
+                        <img src="./Images/Icon.png">
+                        <p>Occasionally</p>
+                    </li>
+                    <li class="tm-nav-item tm-nav-link animate__animated animate__zoomIn">
+                        <img src="./Images/clock.png">
+                        <p>4 hours</p>> 
+                    </li>
+                    <li class="tm-nav-item tm-nav-link tm-width-img animate__animated animate__zoomIn">
+                        <img src="./Images/Shape_6.png">
+                        <p>Yearly</p> 
+                    </li>
+                    <li class="tm-nav-item tm-nav-link animate__animated animate__zoomIn">
+                        <img src="./Images/Group_1.png">
+                        <p>Never</p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- icon container closed -->
+
+        <!-- slider Range begins -->
+
+        <div class="slidecontainer">
+            <div class="slider1"></div>
+            <div class="slide_box">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+            <div class="scroller_txt">
+                <div class="scroller_txt1">Less relevant</div>
+                <div class="scroller_txt2">Relevant</div>
+                <div class="scroller_txt3">Very relevant</div>
+            </div>
+            <div class="button_bottom">
+                <!-- Button is created with the help of div and added image in background also used inline css for right-arrow image -->
+                <div id="btn0" onclick="makeZero()" class="btn">try again<img src="Images/_.png" style="width:6px;height:10px;text-align:center;padding-left:10px"></i></div>
+            </div>
+            
+        </div>
+        <!-- slider Range Ends -->
+      
+  
+    </div>
+    <!-- slider Range use to move bar with javascript (code is less that's why use inline javascript) -->
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        slider.value = 0;
+        // On clicking on the TRY AGAIN icon, the bar should come back to Less Relevant from Very Relevant. I.e. back to the starting point.
+        output.innerHTML = slider.value;
+        function makeZero(){
+            slider.value = 0;
+        }
+       
+    </script>
+</body>
+</html>
