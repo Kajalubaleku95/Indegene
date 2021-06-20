@@ -1,1 +1,337 @@
+/* Installed font for website */
 
+@font-face {
+    font-family: 'bet';
+    src: url(../fonts/BeautifulEveryTime.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'din';
+    src: url(../fonts/D-DIN.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myridpro';
+    src: url(../fonts/MYRIADPRO-REGULAR.OTF);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'D-DinPRO';
+    src: url(../fonts/D-DIN-PRO-600-SemiBold.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'D-DinPROMedium';
+    src: url(../fonts/D-DIN-PRO-500-Medium.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* background image is set to body Layer6 image or green image */
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.background {
+    border-top: 20px solid #cb0000;
+    /* The image used */
+    width: 100%;
+    height: 100%;
+}
+
+.headline {
+    font-size: 61px;
+    font-family: 'bet';
+    color: #ffffff;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+    text-transform: uppercase;
+}
+
+
+/* 5 icon css */
+
+.icons {
+    display: -webkit-box;
+    position: relative;
+    top: 165px;
+    width: 71%;
+    margin: auto;
+    color: #cb0000;
+}
+
+.icon_txt2 {
+    margin-right: -38px;
+}
+
+.icon_txt1 img {
+    height: 100px;
+}
+
+.icon_txt2 img {
+    height: 100px;
+}
+
+.icon_txt3 img {
+    height: 100px;
+}
+
+.icon_txt4 img {
+    height: 100px;
+}
+
+.icon_txt5 img {
+    height: 100px;
+}
+
+.icon_txt1 span,
+.icon_txt2 span,
+.icon_txt3 span,
+.icon_txt4 span,
+.icon_txt5 span {
+    font: 13px din;
+    color: #cc0000;
+    position: relative;
+}
+
+.icon_txt1 span {
+    left: -70px;
+    top: -20px;
+}
+
+.icon_txt2 span {
+    left: -88px;
+    top: -20px;
+}
+
+.icon_txt3 span {
+    left: -70px;
+    top: -20px;
+}
+
+.icon_txt4 span {
+    left: -70px;
+    top: -20px;
+}
+
+.icon_txt5 span {
+    left: -70px;
+    top: -20px;
+}
+
+.tm-container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto 30px;
+}
+
+.tm-main-nav ul {
+    max-width: 976px;
+    padding: 0px;
+}
+
+.tm-main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tm-nav-item {
+    list-style: none;
+    margin: 22px;
+    background-image: url('../Images/white_circle.png');
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tm-nav-item img:hover {
+    display: inline-block;
+    cursor: pointer;
+    animation: zoomIn;
+    animation-duration: 2s;
+}
+
+.tm-nav-link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    /* border: 1px solid #D2D3D4; */
+    color: #999;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.tm-nav-link p {
+    margin-top: 18px;
+    color: #cc0000;
+    font-family: 'din';
+}
+
+.tm-nav-item img {
+    width: 70px;
+    height: 70px;
+}
+
+.tm-width-img img {
+    width: 79px !important;
+    height: 70px !important;
+}
+
+.slidecontainer {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto 30px;
+}
+
+
+/* The slider itself */
+
+.slider1 {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    height: 34px;
+    /* Specified height */
+    background-image: url('../Images/Group_16.png');
+    /* Grey background */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    outline: none;
+    /* Remove outline */
+    align-items: center;
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+.slide_box {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 67%;
+    margin-top: -35px;
+}
+
+
+/* The slider itself */
+
+.slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    height: 0px;
+    /* Specified height */
+    border-radius: 0%;
+    outline: none;
+    /* Remove outline */
+    align-items: center;
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 15px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    cursor: pointer;
+    /* Cursor on hover */
+    margin-bottom: 10px;
+    z-index: 999999999999999999999 !important;
+    background-image: url('../Images/Bar.png');
+    /* img background */
+    background-size: 15px 25px;
+    background-repeat: no-repeat;
+}
+
+.scroller_txt {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 68%;
+    display: flex;
+    margin-top: 27px;
+}
+
+.scroller_txt1,
+.scroller_txt2,
+.scroller_txt3 {
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'D-DinPRO';
+}
+
+.button_bottom {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 27%;
+    display: flex;
+    margin-top: 80px;
+}
+
+.btn {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    /* border-radius: 25px; */
+    color: #fff;
+    /* border: 1px solid #fff; */
+    top: 110px;
+    /* background-color: #d3d3d3; */
+    background-image: url('../Images/Button.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'D-DinPROMedium';
+}
